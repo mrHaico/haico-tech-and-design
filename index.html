@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAICO TECH AND DESIGN | Digital Solutions in Tanzania And East Africa. </title>
+    
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="HAICO TECH AND DESIGN provides professional websites, mobile apps, graphic design, management systems and custom digital solutions in Tanzania.">
+    <meta name="keywords" content="Web Design Tanzania, App Development, Graphic Design, HAICO Tech, Management Systems Tanzania">
+    <meta property="og:title" content="HAICO TECH AND DESIGN | Digital Solutions">
+    <meta property="og:description" content="Turning Ideas Into Digital Reality in Tanzania.">
+    <meta name="theme-color" content="#0046ad">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-content">
+            <a href="#home" class="logo">HAICO TECH <span class="highlight">AND DESIGN</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-btns">
+                <button id="themeToggle" class="btn" style="background:transparent; color: var(--text-main);"><i class="fas fa-moon"></i></button>
+                <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container">
+            <span class="hero-tag">THINK • CREATE • INNOVATE</span>
+            <h1>Turning Ideas Into <br><span class="highlight">Digital Reality.</span></h1>
+            <p>Professional websites, mobile applications, graphic design and custom digital solutions for individuals, businesses and institutions in Tanzania.</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="https://wa.me/255718170176?text=Hello%20HAICO%20TECH%20AND%20DESIGN,%20I%20would%20like%20to%20request%20a%20service." class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose HAICO TECH AND DESIGN</h2>
+                <p>Delivering excellence through innovation</p>
+            </div>
+            <div class="grid">
+                <div class="card"><i class="fas fa-rocket"></i><h3>Innovation</h3><p>We use the latest trends to keep you ahead.</p></div>
+                <div class="card"><i class="fas fa-paint-brush"></i><h3>Creativity</h3><p>Unique designs tailored to your vision.</p></div>
+                <div class="card"><i class="fas fa-code"></i><h3>Modern Tech</h3><p>Built with robust and scalable technologies.</p></div>
+                <div class="card"><i class="fas fa-hand-holding-usd"></i><h3>Affordable</h3><p>Premium quality at Tanzanian market rates.</p></div>
+                <div class="card"><i class="fas fa-mobile-alt"></i><h3>Mobile Friendly</h3><p>Perfect viewing on every screen size.</p></div>
+                <div class="card"><i class="fas fa-users"></i><h3>Customer Focus</h3><p>Your satisfaction is our ultimate goal.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section" style="background: var(--light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <div class="search-container">
+                    <input type="text" id="serviceSearch" placeholder="Search for a service (e.g. Website, App, Design)...">
+                </div>
+            </div>
+            <div class="grid" id="servicesGrid">
+                <!-- Services are dynamically filtered but static in HTML for SEO -->
+                <div class="card service-item" data-name="website development">
+                    <i class="fas fa-globe"></i>
+                    <h3>Website Development</h3>
+                    <p>High-performance business and personal sites.</p>
+                    <p class="new-price">Starts TSh 400,000</p>
+                    <a href="https://wa.me/255718170176?text=I%20want%20to%20request%20Website%20Development" class="btn btn-outline">Request Service</a>
+                </div>
+                <div class="card service-item" data-name="mobile app development">
+                    <i class="fas fa-mobile"></i>
+                    <h3>Mobile App Development</h3>
+                    <p>Android and iOS applications tailored for you.</p>
+                    <p class="new-price">Starts TSh 500,000</p>
+                    <a href="https://wa.me/255718170176?text=I%20want%20to%20request%20Mobile%20App%20Development" class="btn btn-outline">Request Service</a>
+                </div>
+                <div class="card service-item" data-name="graphic design">
+                    <i class="fas fa-bezier-curve"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Logos, flyers, and professional branding.</p>
+                    <p class="new-price">Starts TSh 30,000</p>
+                    <a href="https://wa.me/255718170176?text=I%20want%20to%20request%20Graphic%20Design" class="btn btn-outline">Request Service</a>
+                </div>
+                <div class="card service-item" data-name="school management systems">
+                    <i class="fas fa-school"></i>
+                    <h3>School Management Systems</h3>
+                    <p>Automate grading, attendance, and finance.</p>
+                    <p class="new-price">Starts TSh 750,000</p>
+                    <a href="https://wa.me/255718170176?text=I%20want%20to%20request%20School%20Management%20System" class="btn btn-outline">Request Service</a>
+                </div>
+                <!-- ... More services ... -->
+                <div class="card service-item" data-name="e-commerce solutions">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>E-Commerce Solutions</h3>
+                    <p>Sell products online with integrated payments.</p>
+                    <p class="new-price">Starts TSh 400,000</p>
+                    <a href="https://wa.me/255718170176?text=I%20want%20to%20request%20E-Commerce" class="btn btn-outline">Request Service</a>
+                </div>
+                <div class="card service-item" data-name="custom digital solutions">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Custom Solutions</h3>
+                    <p>Any software solution tailored to your needs.</p>
+                    <p class="new-price">Starts TSh 350,000</p>
+                    <a href="https://wa.me/255718170176?text=I%20want%20to%20request%20Custom%20Solutions" class="btn btn-outline">Request Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Service Catalog</h2>
+                <p>Fixed packages for quick delivery</p>
+            </div>
+            <div class="grid">
+                <!-- Example Catalog Item -->
+                <div class="card">
+                    <div class="catalog-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=60')"></div>
+                    <h3>Business Website</h3>
+                    <div class="price-tag">
+                        <span class="old-price">TSh 650,000</span>
+                        <span class="new-price">TSh 550,000</span>
+                    </div>
+                    <p>5 Pages, SEO Ready, Mobile Responsive.</p>
+                    <p><small>Origin: Tanzania 🇹🇿</small></p>
+                    <div style="margin-top:15px; display:flex; gap:5px;">
+                        <a href="https://wa.me/255718170176?text=Order:%20Business%20Website" class="btn btn-primary" style="padding:8px 15px; font-size:0.8rem;">Order Now</a>
+                        <a href="https://wa.me/255718170176?text=Inquiry:%20Business%20Website" class="btn btn-outline" style="padding:8px 15px; font-size:0.8rem;"><i class="fab fa-whatsapp"></i> Ask</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="catalog-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=60')"></div>
+                    <h3>School Portal</h3>
+                    <div class="price-tag">
+                        <span class="old-price">TSh 850,000</span>
+                        <span class="new-price">TSh 750,000</span>
+                    </div>
+                    <p>Student, Staff and Admin Panels.</p>
+                    <p><small>Origin: Tanzania 🇹🇿</small></p>
+                    <div style="margin-top:15px; display:flex; gap:5px;">
+                        <a href="https://wa.me/255718170176?text=Order:%20School%20System" class="btn btn-primary" style="padding:8px 15px; font-size:0.8rem;">Order Now</a>
+                        <a href="https://wa.me/255718170176?text=Inquiry:%20School%20System" class="btn btn-outline" style="padding:8px 15px; font-size:0.8rem;"><i class="fab fa-whatsapp"></i> Ask</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="catalog-img" style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=500&q=60')"></div>
+                    <h3>Logo & Branding</h3>
+                    <div class="price-tag">
+                        <span class="old-price">TSh 50,000</span>
+                        <span class="new-price">TSh 30,000</span>
+                    </div>
+                    <p>High res logo + Social media kit.</p>
+                    <p><small>Origin: Tanzania 🇹🇿</small></p>
+                    <div style="margin-top:15px; display:flex; gap:5px;">
+                        <a href="https://wa.me/255718170176?text=Order:%20Graphic%20Design" class="btn btn-primary" style="padding:8px 15px; font-size:0.8rem;">Order Now</a>
+                        <a href="https://wa.me/255718170176?text=Inquiry:%20Graphic%20Design" class="btn btn-outline" style="padding:8px 15px; font-size:0.8rem;"><i class="fab fa-whatsapp"></i> Ask</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section" style="background: var(--light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <p>A glimpse of what we've built</p>
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Websites</button>
+                <button class="filter-btn" data-filter="system">Systems</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="grid" id="portfolioGrid">
+                <div class="card portfolio-item web">
+                    <div class="catalog-img">
+                      <img src="images/student_portal.jpg">
+                    </div>
+                    <h3>TRACDI College</h3> 
+                </div>
+                <div class="card portfolio-item system">
+                    <div class="catalog-img" style="background-image: url('https://images.unsplash.com/photo-1454165833767-1316d2944005?auto=format&fit=crop&w=500&q=60')"></div>
+                    <h3>Student Election Portal</h3>
+                </div>
+                <div class="card portfolio-item design">
+                    <div class="catalog-img" style="background-image: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=500&q=60')"></div>
+                    <h3>HAICO Marketplace</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-flex">
+                <div class="about-text">
+                    <div class="section-header" style="text-align: left;">
+                        <h2>About HAICO TECH AND DESIGN</h2>
+                    </div>
+                    <p>HAICO TECH AND DESIGN is a Tanzania-based technology and creative brand focused on turning ideas into useful, attractive and reliable digital products.</p>
+                    <div style="margin-top: 20px;">
+                        <h4>Mission</h4>
+                        <p>To provide innovative, affordable and high-quality digital solutions that help individuals, businesses and institutions grow.</p>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card"><h3 class="counter" data-target="15">0</h3><p>Projects</p></div>
+                    <div class="stat-card"><h3 class="counter" data-target="95">0</h3><p>Happy Clients %</p></div>
+                    <div class="stat-card"><h3 class="counter" data-target="8">0</h3><p>Digital Tools</p></div>
+                    <div class="stat-card"><h3 class="counter" data-target="3">0</h3><p>Years</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work -->
+    <section class="section" style="background: var(--dark-navy); color: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: white;">How We Work</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item"><h3>01 — Discover</h3><p>We listen to your ideas and requirements.</p></div>
+                <div class="timeline-item"><h3>02 — Plan</h3><p>Strategizing the best path to achieve your goals.</p></div>
+                <div class="timeline-item"><h3>03 — Design</h3><p>Creating visual blueprints and UI/UX flows.</p></div>
+                <div class="timeline-item"><h3>04 — Develop</h3><p>Writing clean, efficient code for your solution.</p></div>
+                <div class="timeline-item"><h3>05 — Deliver</h3><p>Launching your project to the world.</p></div>
+                <div class="timeline-item"><h3>06 — Support</h3><p>Continuous updates and reliable maintenance.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch for a free consultation</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +255 718 170 176</p>
+                  <p><i class="fas fa-phone"></i> +255 740 744 048</p>
+                    <p><i class="fas fa-envelope"></i> ayoubhafidhi1@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Dodoma, Tanzania 🇹🇿</p>
+                    <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 10px;">
+                        <a href="tel:+255718170176" class="btn btn-primary">Call Us Now</a>
+                        <a href="mailto:ayoubhafidhi1@gmail.com" class="btn btn-outline">Email Us</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="whatsappForm">
+                    <input type="text" id="formName" placeholder="Full Name" required>
+                    <input type="tel" id="formPhone" placeholder="Phone Number" required>
+                    <input type="email" id="formEmail" placeholder="Email Address">
+                    <select id="formService">
+                        <option value="">Select Service</option>
+                        <option value="Website Development">Website Development</option>
+                        <option value="App Development">App Development</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="System Management">Management System</option>
+                    </select>
+                    <textarea id="formMessage" rows="5" placeholder="Project Details"></textarea>
+                    <button type="submit" class="btn btn-secondary">Send via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>HAICO TECH AND DESIGN</h3>
+                    <p>Your Idea. Our Creativity. One Digital Solution.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/255718170176"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#catalog">Catalog</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Graphics Design</a></li>
+                        <li><a href="#services">School Systems</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 20px;">
+                <p>&copy; 2026 HAICO TECH AND DESIGN. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/255718170176" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // 1. Mobile Menu Toggle
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+
+        // 2. Dark/Light Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            const icon = themeToggle.querySelector('i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+        });
+
+        // 3. Service Search Filter
+        const serviceSearch = document.getElementById('serviceSearch');
+        serviceSearch.addEventListener('keyup', (e) => {
+            const term = e.target.value.toLowerCase();
+            const services = document.querySelectorAll('.service-item');
+            services.forEach(service => {
+                const name = service.getAttribute('data-name');
+                service.style.display = name.includes(term) ? 'block' : 'none';
+            });
+        });
+
+        // 4. Portfolio Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // 5. Statistics Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const inc = target / speed;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        });
+
+        // 6. Contact Form to WhatsApp
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('formName').value;
+            const phone = document.getElementById('formPhone').value;
+            const service = document.getElementById('formService').value;
+            const message = document.getElementById('formMessage').value;
+            
+            const wpUrl = `https://wa.me/255718170176?text=` 
+                + `*New Project Inquiry*%0A`
+                + `*Name:* ${name}%0A`
+                + `*Phone:* ${phone}%0A`
+                + `*Service:* ${service}%0A`
+                + `*Details:* ${message}`;
+            
+            window.open(wpUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
+                        
